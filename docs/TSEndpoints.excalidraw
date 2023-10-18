@@ -1,0 +1,48 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "r91MV83RiWIY0Dg01uC5o",
+      "type": "text",
+      "x": 313.5078125,
+      "y": 153.92578125,
+      "width": 189.59983825683594,
+      "height": 75,
+      "angle": 0,
+      "strokeColor": "#1971c2",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 2004176522,
+      "version": 87,
+      "versionNonce": 179732822,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1697587573418,
+      "link": null,
+      "locked": false,
+      "text": "Objects to Create:\nuser account\nmissing person",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 68,
+      "containerId": null,
+      "originalText": "Objects to Create:\nuser account\nmissing person",
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#fffce8"
+  },
+  "files": {}
+}
