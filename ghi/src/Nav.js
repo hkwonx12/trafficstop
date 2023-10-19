@@ -6,6 +6,9 @@ function Nav() {
       <div>
         <NavLink to="/">MainPage</NavLink>
       </div>
+      <div>
+        <NavLink to="login">Login</NavLink>
+      </div>
     </nav>
   );
 }
