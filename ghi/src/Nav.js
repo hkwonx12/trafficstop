@@ -10,6 +10,9 @@ function Nav() {
         <NavLink className="navbar-brand" to="/">
           MainPage
         </NavLink>
+        <NavLink className="navbar-brand" to="profile">
+          Profile
+        </NavLink>
         <button type="button" className="btn btn-light">
           <NavLink to="login">Login</NavLink>
         </button>

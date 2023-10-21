@@ -1,4 +1,4 @@
-function Sighting() {
+function CreateSighting() {
   return (
     <div className="row">
       <div className="offset-3 col-6">
@@ -45,4 +45,4 @@ function Sighting() {
   );
 }
 
-export default Sighting;
+export default CreateSighting;

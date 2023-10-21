@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SightingDetails from "./SightingDetails";
 
 function Details() {
   return (
@@ -22,6 +23,9 @@ function Details() {
         <button type="button" className="btn btn-danger">
           <Link to="">Delete</Link>
         </button>
+      </div>
+      <div className="container">
+        <SightingDetails />
       </div>
     </div>
   );
