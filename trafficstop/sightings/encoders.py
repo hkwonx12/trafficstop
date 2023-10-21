@@ -16,10 +16,10 @@ class SightingEncoder(ModelEncoder):
         "date_sighted",
         "description",
         "photo_url",
+        "sighting_reporter",
         "person",
-        "reporter",
     ]
     encoders = {
         "person": MissingPersonEncoder(),
-        "reporter": ReporterEncoder(),
+        "sighting_reporter": ReporterEncoder(),
     }

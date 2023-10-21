@@ -18,7 +18,7 @@ class Sighting(models.Model):
         related_name="sighting",
         on_delete=models.CASCADE,
     )
-    reporter = models.ForeignKey(
+    sighting_reporter = models.ForeignKey(
         Reporter,
         related_name="sighting",
         on_delete=models.PROTECT,
