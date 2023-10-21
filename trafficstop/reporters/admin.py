@@ -1,3 +1,12 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Reporter
+
+
+@admin.register(Reporter)
+class ReporterAdmin(admin.ModelAdmin):
+    list_display = (
+        "name",
+        "email",
+        "receive_updates"
+    )
