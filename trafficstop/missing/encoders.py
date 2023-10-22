@@ -6,6 +6,7 @@ from reporters.encoders import ReporterEncoder
 class MissingPersonEncoder(ModelEncoder):
     model = MissingPerson
     properties = [
+        "id",
         "name",
         "height",
         "weight",

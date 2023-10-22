@@ -14,6 +14,6 @@ class MissingPerson(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     reporter = models.ForeignKey(
         Reporter,
-        related_name="reporter",
+        related_name="person",
         on_delete=models.PROTECT,
     )
