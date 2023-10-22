@@ -1,4 +1,27 @@
+import { useEffect, useState } from "react";
+
+
 function CreateSighting() {
+  // Store the form state; initialize fields to empty strings
+  const [formData, setFormData] = useState({
+    address: "",
+    city: "",
+    state: "",
+    postal_code: "",
+    country:"",
+    date_sighted:"",
+    description:"",
+    photo_url: "",
+    reporter_id:"",
+})
+// Handle when the form changes
+const handleChange = (event) => {
+    setFormData({
+        ...formData,
+        [event.target.name]: event.target.value
+    });
+}
+
   return (
     <div className="row">
       <div className="offset-3 col-6">
