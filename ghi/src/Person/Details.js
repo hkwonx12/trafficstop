@@ -16,7 +16,9 @@ function Details() {
             <li>Birth Date</li>
             <li>Last Seen</li>
             <li>Age</li>
+            {/* calculate current date - birth date */}
             <li>Days Missing</li>
+            {/* calculate current date - last seen */}
           </ul>
         </div>
         <div className="button">
