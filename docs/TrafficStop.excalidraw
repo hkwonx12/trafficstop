@@ -107,7 +107,7 @@
       "containerId": null,
       "originalText": "Logout",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -143,7 +143,7 @@
       "containerId": null,
       "originalText": "Welcome back, <user>!",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "line",
@@ -257,7 +257,7 @@
       "containerId": "eu8tXSo8RzONyikT0fAh3",
       "originalText": "Your People",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -327,7 +327,7 @@
       "containerId": "PE6GA5nc4x23Upu4_X-lR",
       "originalText": "Other People",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -471,7 +471,7 @@
       "containerId": "mSC-jqKUgX69tGsOV8d1N",
       "originalText": "Photo Carousel or Grid",
       "lineHeight": 1.15,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "text",
@@ -509,7 +509,7 @@
       "containerId": null,
       "originalText": "Login",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -552,7 +552,7 @@
       "containerId": null,
       "originalText": "Sign Up",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -590,7 +590,7 @@
       "containerId": null,
       "originalText": "Traffic Stop",
       "lineHeight": 1.15,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "text",
@@ -836,7 +836,7 @@
       "containerId": "7BUR2D26KEtFczKr6BGxm",
       "originalText": "Photo from URL",
       "lineHeight": 1.15,
-      "baseline": 33
+      "baseline": 32
     },
     {
       "type": "text",
@@ -872,7 +872,7 @@
       "containerId": null,
       "originalText": "Name\nHeight\nWeight\nBirth Date\nLast Seen\nAge (calculated)\nDays Missing (calculated)",
       "lineHeight": 1.15,
-      "baseline": 125
+      "baseline": 124
     },
     {
       "type": "text",
@@ -908,7 +908,7 @@
       "containerId": null,
       "originalText": "Detailed Description",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -944,7 +944,7 @@
       "containerId": null,
       "originalText": "**Only the account who created the entry can do this.",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1014,7 +1014,7 @@
       "containerId": "rIateDh4MXfH9vrRLCGuP",
       "originalText": "Map w/ pins",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -1050,7 +1050,7 @@
       "containerId": null,
       "originalText": "SIGHTINGS",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1172,7 +1172,7 @@
       "containerId": null,
       "originalText": "Sign Up",
       "lineHeight": 1.15,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "text",
@@ -1244,7 +1244,7 @@
       "containerId": null,
       "originalText": "*If we use Passage, we don't need a password.",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1361,7 +1361,7 @@
       "containerId": null,
       "originalText": "Add Person",
       "lineHeight": 1.15,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -1487,7 +1487,7 @@
       "containerId": "xr26uhr5nJwX_-z00nXqc",
       "originalText": "Details",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -1523,7 +1523,7 @@
       "containerId": null,
       "originalText": "Person 1",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1622,7 +1622,7 @@
       "containerId": "h5JmRLbGeTjL7ETgUIdf0",
       "originalText": "Details",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -1658,7 +1658,7 @@
       "containerId": null,
       "originalText": "Person 2",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -1699,7 +1699,7 @@
       "containerId": null,
       "originalText": "Add Person",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1811,7 +1811,7 @@
       "containerId": null,
       "originalText": "Add Sighting",
       "lineHeight": 1.15,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "rectangle",
@@ -1885,7 +1885,7 @@
       "containerId": "kJl2r5l859fouy5E2MTtE",
       "originalText": "List Sightings",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "arrow",
@@ -2017,7 +2017,7 @@
       "containerId": null,
       "originalText": "SIGHTINGS OF <missing person>",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2093,7 +2093,7 @@
       "containerId": "1CowqQbporTyQovLpecy7",
       "originalText": "Person's\nPhoto",
       "lineHeight": 1.15,
-      "baseline": 33
+      "baseline": 32
     },
     {
       "type": "rectangle",
@@ -2173,7 +2173,7 @@
       "containerId": "C_YHrJx9-h6IxkE2wLeU8",
       "originalText": "Map w/ pins",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2249,7 +2249,7 @@
       "containerId": null,
       "originalText": "Sighting 1",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2325,7 +2325,7 @@
       "containerId": "w3UE3E-r7MzhACog4jJ2n",
       "originalText": "Details",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2396,7 +2396,7 @@
       "containerId": null,
       "originalText": "Sighting 2",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2472,7 +2472,7 @@
       "containerId": "nekya7RMRietMI224ZatJ",
       "originalText": "Details",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2543,7 +2543,7 @@
       "containerId": null,
       "originalText": "Sighting 3",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2619,12 +2619,12 @@
       "containerId": "1D9kvQDMOldnFaD2QpC10",
       "originalText": "Details",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
-      "version": 449,
-      "versionNonce": 1896224825,
+      "version": 450,
+      "versionNonce": 1408269387,
       "isDeleted": false,
       "id": "C7n7ZBRfUSfeIN7MUyMNW",
       "fillStyle": "hachure",
@@ -2644,7 +2644,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1697836100737,
+      "updated": 1697942661662,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2781,7 +2781,7 @@
       "containerId": null,
       "originalText": "SIGHTING 1 of <missing person>",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "text",
@@ -2819,7 +2819,7 @@
       "containerId": null,
       "originalText": "Date Sighted:\nLocation: Street Address, City, State, Zip Code, Country\n\nDescription:",
       "lineHeight": 1.15,
-      "baseline": 69
+      "baseline": 68
     },
     {
       "type": "rectangle",
@@ -2893,7 +2893,7 @@
       "containerId": "R2UztLuwEwcFVIlCNQGZF",
       "originalText": "pinned map",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -2967,7 +2967,7 @@
       "containerId": "DxoW3-RoHXWdQ6Hp-eBQc",
       "originalText": "sighting\nphoto",
       "lineHeight": 1.15,
-      "baseline": 33
+      "baseline": 32
     },
     {
       "type": "rectangle",
@@ -3041,7 +3041,7 @@
       "containerId": "6u3KAhrueXYKADczOFVp4",
       "originalText": "Edit",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -3115,7 +3115,7 @@
       "containerId": "Ys0EFhD5Y7-FRYQTlqgrc",
       "originalText": "Delete",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -3189,7 +3189,7 @@
       "containerId": "XrGtpZXBZzN1OTXrv0eQP",
       "originalText": "Add Sighting*",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -3259,7 +3259,7 @@
       "containerId": "BWBcoHQc4WpNsDYhxf0op",
       "originalText": "Edit**",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -3329,7 +3329,7 @@
       "containerId": "VZREkSWGZ4vzBlUJRzMJ-",
       "originalText": "Delete**",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     },
     {
       "type": "arrow",
@@ -3417,7 +3417,7 @@
       "containerId": null,
       "originalText": "*Only signed in users can do this.",
       "lineHeight": 1.15,
-      "baseline": 15
+      "baseline": 14
     }
   ],
   "appState": {
