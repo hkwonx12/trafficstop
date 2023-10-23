@@ -5,6 +5,7 @@ from missing.models import MissingPerson
 
 
 class Sighting(models.Model):
+    sighting_name = models.CharField(max_length=100, null=True)
     address = models.CharField(max_length=200)
     city = models.CharField(max_length=100)
     state = models.CharField(max_length=20)

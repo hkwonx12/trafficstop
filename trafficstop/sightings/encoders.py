@@ -8,6 +8,7 @@ class SightingEncoder(ModelEncoder):
     model = Sighting
     properties = [
         "id",
+        "sighting_name",
         "address",
         "city",
         "state",
