@@ -8,11 +8,8 @@ function Profile() {
         Welcome, <Link to="/userprofile">user</Link>!
       </h2>
 
-      <button type="button" className="btn btn-light">
+      <button type="button" className="btn btn-light" id="addperson">
         <Link to="/profile/new">Add a Person</Link>
-      </button>
-      <button type="button" className="btn btn-light">
-        <Link to="/profile/details">Details</Link>
       </button>
       <ListMissingPersons></ListMissingPersons>
     </div>

@@ -9,8 +9,8 @@ import MissingPersonForm from "./Person/MissingPersonForm";
 import ListMissingPersons from "./Person/MissingPersonList";
 import Details from "./Person/Details";
 import CreateSighting from "./Person/CreateSighting";
-import SightingDetails from "./Person/SightingDetails";
 import UserProfile from "./User/UserProfile";
+import ListSightings from "./Person/ListSightings";
 
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
           <Route index element={<Profile />} />
           <Route path="new" element={<MissingPersonForm />} />
           <Route path="details/:id" element={<Details />} />
-          <Route path="sighting" element={<CreateSighting />} />
-          <Route path="sightingdetails" element={<SightingDetails />} />
+          <Route path="sighting/:id" element={<CreateSighting />} />
+          <Route path="sightingslist/:id" element={<ListSightings />} />
         </Route>
       </Routes>
     </BrowserRouter>

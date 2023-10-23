@@ -35,9 +35,7 @@ function MissingPersonForm() {
     };
 
     // Wait for server response
-    console.log("Sending person data");
     const newPersonResponse = await fetch(url, sendConfig);
-    console.log("Sent person data");
     if (newPersonResponse.ok) {
       setFormData({
         name: "",
