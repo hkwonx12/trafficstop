@@ -1,6 +1,6 @@
 from common.json import ModelEncoder
 from .models import MissingPerson
-from reporters.encoders import ReporterEncoder
+# from reporters.encoders import ReporterEncoder
 
 
 class MissingPersonEncoder(ModelEncoder):
@@ -17,6 +17,6 @@ class MissingPersonEncoder(ModelEncoder):
         "created_on",
         "reporter",
     ]
-    encoders = {
-        "reporter": ReporterEncoder(),
-    }
+    # encoders = {
+    #     "reporter": ReporterEncoder(),
+    # }

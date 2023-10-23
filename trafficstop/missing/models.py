@@ -1,6 +1,6 @@
 from django.db import models
 
-from reporters.models import Reporter
+# from reporters.models import Reporter
 
 
 class MissingPerson(models.Model):
@@ -12,8 +12,9 @@ class MissingPerson(models.Model):
     description = models.TextField(blank=True, null=True)
     photo_url = models.URLField(blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
-    reporter = models.ForeignKey(
-        Reporter,
-        related_name="person",
-        on_delete=models.PROTECT,
-    )
+    # reporter = models.ForeignKey(
+    #     Reporter,
+    #     related_name="person",
+    #     on_delete=models.PROTECT,
+    # )
+    reporter = models.CharField(max_length=50)
