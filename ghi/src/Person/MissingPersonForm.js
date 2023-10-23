@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function MissingPersonForm() {
   // Store the form state; initialize fields to empty strings
@@ -6,10 +6,11 @@ function MissingPersonForm() {
     name: "",
     height: "",
     weight: "",
+    birth_date: "",
     last_seen: "",
     description: "",
     photo_url: "",
-    reporter_id: "",
+    reporter: "",
   });
   // Handle when the form changes
   const handleChange = (event) => {
@@ -42,10 +43,11 @@ function MissingPersonForm() {
         name: "",
         height: "",
         weight: "",
+        birth_date: "",
         last_seen: "",
         description: "",
         photo_url: "",
-        reporter_id: "",
+        reporter: "",
       });
     } else {
       console.error("*****ERROR. Server response: ", newPersonResponse);
@@ -59,9 +61,6 @@ function MissingPersonForm() {
           <h1>Enter a missing person</h1>
           <form onSubmit={handleSubmit} id="add-person-form">
             <div className="form-floating mb-3">
-              <label htmlFor="name" className="form-label">
-                Name
-              </label>
               <input
                 onChange={handleChange}
                 required
@@ -71,11 +70,9 @@ function MissingPersonForm() {
                 id="name"
                 className="form-control"
               />
+              <label htmlFor="name">Name</label>
             </div>
             <div className="form-floating mb-3">
-              <label htmlFor="height" className="form-label">
-                Height
-              </label>
               <input
                 onChange={handleChange}
                 required
@@ -84,11 +81,9 @@ function MissingPersonForm() {
                 value={formData.height}
                 className="form-control"
               />
+              <label htmlFor="height">Height</label>
             </div>
             <div className="form-floating mb-3">
-              <label htmlFor="weight" className="form-label">
-                Weight
-              </label>
               <input
                 onChange={handleChange}
                 required
@@ -97,11 +92,24 @@ function MissingPersonForm() {
                 value={formData.weight}
                 className="form-control"
               />
+              <label htmlFor="weight" className="form-label">
+                Weight
+              </label>
             </div>
             <div className="form-floating mb-3">
-              <label htmlFor="last_seen" className="form-label">
-                Last Seen YYYY-MM-DD
+              <input
+                onChange={handleChange}
+                required
+                type="text"
+                name="birth_date"
+                value={formData.birth_date}
+                className="form-control"
+              />
+              <label htmlFor="birth_date" className="form-label">
+                Birth Date: YYYY-MM-DD
               </label>
+            </div>
+            <div className="form-floating mb-3">
               <input
                 onChange={handleChange}
                 required
@@ -110,9 +118,11 @@ function MissingPersonForm() {
                 value={formData.last_seen}
                 className="form-control"
               />
+              <label htmlFor="last_seen" className="form-label">
+                Last Seen YYYY-MM-DD
+              </label>
             </div>
             <div className="form-floating mb-3">
-              <label className="form-label">Photo Url</label>
               <input
                 onChange={handleChange}
                 type="text"
@@ -120,9 +130,9 @@ function MissingPersonForm() {
                 value={formData.photo_url}
                 className="form-control"
               />
+              <label className="form-label">Photo Url</label>
             </div>
             <div className="form-floating mb-3">
-              <label className="form-label">Detailed Description</label>
               <input
                 onChange={handleChange}
                 type="text"
@@ -130,17 +140,18 @@ function MissingPersonForm() {
                 value={formData.description}
                 className="form-control"
               />
+              <label className="form-label">Detailed Description</label>
             </div>
             <div className="form-floating mb-3">
-              <label className="form-label">TEMP Reporter ID</label>
               <input
                 onChange={handleChange}
                 required
                 type="text"
-                name="reporter_id"
-                value={formData.reporter_id}
+                name="reporter"
+                value={formData.reporter}
                 className="form-control"
               />
+              <label className="form-label">Reporter</label>
             </div>
             <button type="submit" className="btn btn-primary">
               Submit

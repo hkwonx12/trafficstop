@@ -6,6 +6,7 @@ import Profile from "./User/Profile";
 import Login from "./User/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MissingPersonForm from "./Person/MissingPersonForm";
+import ListMissingPersons from "./Person/MissingPersonList";
 import Details from "./Person/Details";
 import CreateSighting from "./Person/CreateSighting";
 import SightingDetails from "./Person/SightingDetails";
@@ -19,12 +20,12 @@ function App() {
         <Route path="/" element={<MainPage />} />
 
         <Route path="login" element={<Login />} />
-        <Route path="userprofile" element={<UserProfile/>}/>
+        <Route path="userprofile" element={<UserProfile />} />
 
         <Route path="profile">
           <Route index element={<Profile />} />
           <Route path="new" element={<MissingPersonForm />} />
-          <Route path="details" element={<Details />} />
+          <Route path="details/:id" element={<Details />} />
           <Route path="sighting" element={<CreateSighting />} />
           <Route path="sightingdetails" element={<SightingDetails />} />
         </Route>
