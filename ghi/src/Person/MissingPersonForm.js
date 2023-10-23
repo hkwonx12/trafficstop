@@ -34,7 +34,9 @@ function MissingPersonForm() {
     };
 
     // Wait for server response
+    console.log("Sending person data");
     const newPersonResponse = await fetch(url, sendConfig);
+    console.log("Sent person data");
     if (newPersonResponse.ok) {
       setFormData({
         name: "",
@@ -45,6 +47,8 @@ function MissingPersonForm() {
         photo_url: "",
         reporter_id: "",
       });
+    } else {
+      console.error("*****ERROR. Server response: ", newPersonResponse);
     }
   };
 
@@ -55,7 +59,7 @@ function MissingPersonForm() {
           <h1>Enter a missing person</h1>
           <form onSubmit={handleSubmit} id="add-person-form">
             <div className="form-floating mb-3">
-              <label for="name" className="form-label">
+              <label htmlFor="name" className="form-label">
                 Name
               </label>
               <input
@@ -69,7 +73,7 @@ function MissingPersonForm() {
               />
             </div>
             <div className="form-floating mb-3">
-              <label for="height" className="form-label">
+              <label htmlFor="height" className="form-label">
                 Height
               </label>
               <input
@@ -82,7 +86,7 @@ function MissingPersonForm() {
               />
             </div>
             <div className="form-floating mb-3">
-              <label for="weight" className="form-label">
+              <label htmlFor="weight" className="form-label">
                 Weight
               </label>
               <input
@@ -95,7 +99,9 @@ function MissingPersonForm() {
               />
             </div>
             <div className="form-floating mb-3">
-              <label className="form-label">Last Seen</label>
+              <label htmlFor="last_seen" className="form-label">
+                Last Seen YYYY-MM-DD
+              </label>
               <input
                 onChange={handleChange}
                 required
@@ -119,7 +125,6 @@ function MissingPersonForm() {
               <label className="form-label">Detailed Description</label>
               <input
                 onChange={handleChange}
-                required
                 type="text"
                 name="description"
                 value={formData.description}
@@ -137,7 +142,7 @@ function MissingPersonForm() {
                 className="form-control"
               />
             </div>
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" className="btn btn-primary">
               Submit
             </button>
           </form>

@@ -1,9 +1,32 @@
 services:
-  web:
-    build:
-      context: app
-      target: dev-envs
-    ports:
-      - '8000:8000'
+  ghi:
+    image: node:lts-bullseye
+    command: /bin/bash run.sh
+    working_dir: /app
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - ./ghi/:/app
+    ports:
+      - "3000:3000"
+    environment:
+      HOST_OS: ${OS}
+      NODE_ENV: development
+      HOST: "0.0.0.0"
+  db:
+    image: postgres:16.0-bullseye
+    environment:
+      - POSTGRES_MULTIPLE_DATABASES=missing,reporters,sightings,trafficstop
+      - POSTGRES_PASSWORD=test-databases
+    volumes:
+      - trafficstop-data:/var/lib/postgresql/data
+    ports:
+      - 8000:8000
+
+
+  # web:
+  #   build:
+  #     context: app
+  #     target: dev-envs
+  #   ports:
+  #     - '8000:8000'
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock

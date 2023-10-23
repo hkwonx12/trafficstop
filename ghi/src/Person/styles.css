@@ -31,3 +31,16 @@
     width: 100%;
     height: 75vh;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 100px;
+    text-align: center;
+
+}
