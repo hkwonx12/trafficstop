@@ -4,7 +4,7 @@ import json
 
 from .models import MissingPerson
 from .encoders import MissingPersonEncoder
-from reporters.models import Reporter
+# from reporters.models import Reporter
 
 
 @require_http_methods(["POST", "GET"])
@@ -16,19 +16,19 @@ def api_missingperson(request):
     if request.method == "POST":
         new_person = json.loads(request.body)
 
-        try:
-            reporter = Reporter.objects.get(id=new_person["reporter_id"])
-            new_person["reporter"] = reporter
-            person = MissingPerson.objects.create(**new_person)
-            return JsonResponse(
-                person,
-                encoder=MissingPersonEncoder,
-                safe=False,
-            )
-        except Reporter.DoesNotExist:
-            return JsonResponse(
-                {"ERROR": "Reporter with this ID does not exist"},
-            )
+        # try:
+        # reporter = Reporter.objects.get(id=new_person["reporter_id"])
+        # new_person["reporter"] = reporter
+        person = MissingPerson.objects.create(**new_person)
+        return JsonResponse(
+            person,
+            encoder=MissingPersonEncoder,
+            safe=False,
+        )
+        # except Reporter.DoesNotExist:
+        #     return JsonResponse(
+        #         {"ERROR": "Reporter with this ID does not exist"},
+        #     )
     else:
         people = MissingPerson.objects.all()
         return JsonResponse(
@@ -80,6 +80,6 @@ def api_persondetails(request, id):
             return JsonResponse({"delete": count > 0})
         except MissingPerson.DoesNotExist:
             return JsonResponse(
-                {"ERROR": "Person does not exist"},
+                {"ERROR": "No person with ID {id} exists"},
                 status=404
             )

@@ -4,7 +4,7 @@ import json
 
 from .models import Sighting
 from .encoders import SightingEncoder
-from reporters.models import Reporter
+# from reporters.models import Reporter
 from missing.models import MissingPerson
 
 
@@ -25,14 +25,14 @@ def api_sightings(request, person_id):
         # POST
         new_sighting = json.loads(request.body)
 
-        try:
-            reporter = Reporter.objects.get(id=new_sighting["sighting_reporter"])
-            new_sighting["sighting_reporter"] = reporter
-        except Reporter.DoesNotExist:
-            return JsonResponse(
-                {"ERROR": f"Reporter {new_sighting['reporter_id']} does not exist"},
-                status=404
-            )
+        # try:
+        #     reporter = Reporter.objects.get(id=new_sighting["sighting_reporter"])
+        #     new_sighting["sighting_reporter"] = reporter
+        # except Reporter.DoesNotExist:
+        #     return JsonResponse(
+        #         {"ERROR": f"Reporter {new_sighting['reporter_id']} does not exist"},
+        #         status=404
+        #     )
 
         try:
             person = MissingPerson.objects.get(id=person_id)
@@ -60,7 +60,7 @@ def api_sighting(request, person_id, sighting_id):
     """
     if request.method == "GET":
         try:
-            sighting = Sighting.objects.get(id=sighting_id)
+            sighting = Sighting.objects.get(id=sighting_id, person=person_id)
             return JsonResponse(
                 sighting,
                 encoder=SightingEncoder,

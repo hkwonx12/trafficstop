@@ -1,6 +1,6 @@
 from common.json import ModelEncoder
 from .models import Sighting
-from reporters.encoders import ReporterEncoder
+# from reporters.encoders import ReporterEncoder
 from missing.encoders import MissingPersonEncoder
 
 
@@ -8,6 +8,7 @@ class SightingEncoder(ModelEncoder):
     model = Sighting
     properties = [
         "id",
+        "sighting_name",
         "address",
         "city",
         "state",
@@ -21,5 +22,5 @@ class SightingEncoder(ModelEncoder):
     ]
     encoders = {
         "person": MissingPersonEncoder(),
-        "sighting_reporter": ReporterEncoder(),
+        # "sighting_reporter": ReporterEncoder(),
     }
